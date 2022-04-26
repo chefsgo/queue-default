@@ -1,4 +1,4 @@
-module 54hub.com/argo/queue-default
+module github.com/chefsgo/queue-default
 
 go 1.17
 
