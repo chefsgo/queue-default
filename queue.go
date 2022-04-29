@@ -105,7 +105,7 @@ func (connect *defaultConnect) Start() error {
 	return nil
 }
 
-func (connect *defaultConnect) Publish(name string, data []byte) error {
+func (connect *defaultConnect) Enqueue(name string, data []byte) error {
 	if qqq, ok := connect.queues[name]; ok {
 		qqq <- &defaultMsg{name, data}
 	}
